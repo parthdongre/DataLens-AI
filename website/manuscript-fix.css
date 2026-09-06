@@ -1,0 +1,13 @@
+/* Execution manuscript orbit fix */
+.diagram{height:auto;aspect-ratio:1.18/1;min-height:560px;overflow:hidden}
+.diagram .ring,.diagram .ring2,.diagram .ring3{left:50%;top:50%;height:auto;transform:translate(-50%,-50%);z-index:1}
+.diagram .ring{width:min(62%,460px);aspect-ratio:1}
+.diagram .ring2{width:min(45%,330px);aspect-ratio:1}
+.diagram .ring3{width:min(24%,176px);aspect-ratio:1}
+.diagram .center{left:50%;top:50%;width:46px;height:46px;transform:translate(-50%,-50%);z-index:4}
+.diagram .line{left:50%;top:50%;height:1px;width:36%;transform-origin:0 50%;z-index:2;background:linear-gradient(90deg,rgba(7,17,26,.48),rgba(7,17,26,.18))}
+.diagram .node{width:88px;height:88px;z-index:3;transform:translate(-50%,-50%);box-shadow:0 10px 22px rgba(7,17,26,.09),0 0 0 6px rgba(255,253,247,.72)}
+.diagram .n1{left:13%;top:30%}.diagram .n2{left:87%;top:30%;right:auto}.diagram .n3{left:79%;top:72%;right:auto;bottom:auto}.diagram .n4{left:21%;top:72%;bottom:auto}.diagram .n5{left:50%;top:10%}
+.diagram .l1{left:50%;top:50%;width:39%;height:1px;transform:rotate(208deg)}.diagram .l2{left:50%;top:50%;width:39%;height:1px;transform:rotate(-28deg)}.diagram .l3{left:50%;top:50%;width:34%;height:1px;transform:rotate(36deg)}.diagram .l4{left:50%;top:50%;width:34%;height:1px;transform:rotate(144deg)}.diagram .l5{left:50%;top:50%;width:34%;height:1px;transform:rotate(-90deg)}
+.diagramLabel{left:28px;bottom:22px}
+@media(max-width:720px){.diagram{aspect-ratio:1/1;min-height:0}.diagram .ring{width:66%;height:auto;left:50%;top:50%}.diagram .ring2{width:48%;height:auto;left:50%;top:50%}.diagram .ring3{width:27%;height:auto;left:50%;top:50%}.diagram .center{left:50%;top:50%;width:38px;height:38px}.diagram .node{width:68px;height:68px;min-width:0;min-height:0}.diagram .n1{left:14%;top:31%}.diagram .n2{left:86%;top:31%}.diagram .n3{left:78%;top:72%}.diagram .n4{left:22%;top:72%}.diagram .n5{left:50%;top:11%}.diagram .line{display:block}.diagram .l1{width:38%;transform:rotate(211deg)}.diagram .l2{width:38%;transform:rotate(-31deg)}.diagram .l3{width:35%;transform:rotate(39deg)}.diagram .l4{width:35%;transform:rotate(141deg)}.diagram .l5{width:34%;transform:rotate(-90deg)}.diagramLabel{left:14px;bottom:12px}}
