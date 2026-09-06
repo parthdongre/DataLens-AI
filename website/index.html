@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#0c3555" />
+<meta name="description" content="FrameVitals is a source-aware toolkit for profiling, comparing, validating, and gating tabular data before it becomes a downstream failure." />
+<title>FrameVitals · Watch the Signal</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="image" href="https://raw.githubusercontent.com/parthdongre/FrameVitals/website-final-deploy/website/ChatGPT%20Image%20Sep%206%2C%202026%2C%2012_57_10%20PM%20%282%29.png" type="image/png" fetchpriority="high" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans:wght@400;500&family=IM+Fell+English:ital@1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles-a.css" />
+<link rel="stylesheet" href="styles-b.css" />
+</head>
+<body>
+<div class="progressBar"></div>
+<div class="texture"></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">FrameVitals</a>
+    <nav class="navlinks">
+      <a href="#signals">Signals</a>
+      <a href="#manuscript">Execution</a>
+      <a href="#allegory">Allegory</a>
+      <a href="#gate">Gate</a>
+      <a href="#monitor">Monitoring</a>
+      <a href="https://github.com/parthdongre/FrameVitals" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+    <a class="navGit" href="https://github.com/parthdongre/FrameVitals" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="signalRibbon" aria-hidden="true">
+    <svg viewBox="0 0 1440 6200" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="threadGradient" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#8b1f29"/>
+          <stop offset="50%" stop-color="#c62b38"/>
+          <stop offset="100%" stop-color="#da4956"/>
+        </linearGradient>
+      </defs>
+      <path class="signalGlow" d="M 520 620 C 730 700, 920 640, 1160 760 S 1250 1080, 940 1360 S 430 1640, 380 1960 S 760 2360, 1040 2520 S 1180 2960, 760 3200 S 290 3600, 500 3980 S 1070 4220, 1180 4600 S 950 5250, 720 5600"/>
+      <path class="signalPath" id="signalPath" d="M 520 620 C 730 700, 920 640, 1160 760 S 1250 1080, 940 1360 S 430 1640, 380 1960 S 760 2360, 1040 2520 S 1180 2960, 760 3200 S 290 3600, 500 3980 S 1070 4220, 1180 4600 S 950 5250, 720 5600"/>
+      <path class="signalFine" d="M 545 636 C 755 716, 944 654, 1182 780 S 1266 1094, 960 1376 S 452 1656, 404 1978 S 780 2375, 1060 2536 S 1200 2980, 780 3222 S 312 3618, 522 3996 S 1088 4238, 1200 4620 S 970 5264, 742 5616"/>
+    </svg>
+  </div>
+
+  <section class="hero">
+    <div class="angelFrame"></div>
+    <div class="star"><i></i></div>
+    <div class="redBeam"></div>
+    <div class="bigGhost">GUARDIAN</div>
+    <div class="angelLayer"><img src="https://raw.githubusercontent.com/parthdongre/FrameVitals/website-final-deploy/website/ChatGPT%20Image%20Sep%206%2C%202026%2C%2012_57_10%20PM%20%282%29.png" width="1122" height="1402" alt="Saint Michael cutout artwork" decoding="async" fetchpriority="high"/></div>
+    <div class="wrap heroGrid">
+      <div class="heroCopy reveal">
+        <p class="kicker">Source-aware data health</p>
+        <h1>DATA<span class="line2">HAS A</span><span class="accent">PULSE.</span></h1>
+        <p class="heroLead">Catch unhealthy, drifting, or contract-breaking data before it becomes a downstream failure.</p>
+        <div class="heroActions">
+          <a class="btn primary" href="#signals">Start the tour</a>
+          <a class="btn" href="https://pypi.org/project/framevitals/" target="_blank" rel="noreferrer">PyPI ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="heroScript reveal">keep watch over the signal</div>
+    <div class="heroMeta reveal">Profile · Compare · Validate · Gate</div>
+  </section>
+
+  <section class="band"><div class="bandTrack">PROFILE / COMPARE / <span>VALIDATE</span> / GATE / PROFILE / COMPARE / <span>VALIDATE</span> / GATE /</div></section>
+
+  <section class="signals" id="signals">
+    <div class="wrap">
+      <div class="signalsHead reveal">
+        <div><p class="kicker">01 / Signals</p></div>
+        <h2>FOUR SIGNALS.<br><em>ONE VERDICT.</em></h2>
+      </div>
+      <div class="signalStack">
+        <article class="sig reveal"><span class="kicker">Health</span><h3>Read the condition.</h3><p>Missingness, duplicates, broken types, and quality issues.</p></article>
+        <article class="sig reveal"><span class="kicker">Drift</span><h3>Read the change.</h3><p>Compare current data against a trusted reference.</p></article>
+        <article class="sig reveal"><span class="kicker">Contracts</span><h3>Read the law.</h3><p>Infer expectations, then enforce them.</p></article>
+        <article class="sig reveal"><span class="kicker">Gate</span><h3>Read the judgment.</h3><p>Return PASS, WARN, or FAIL.</p></article>
+      </div>
+      <div class="marginalia one reveal">let the evidence speak first</div>
+    </div>
+  </section>
+
+  <section class="manuscript" id="manuscript">
+    <div class="wrap manuscriptGrid">
+      <div class="manuscriptCopy reveal">
+        <p class="kicker">02 / Execution manuscript</p>
+        <h2>FROM SOURCE.<br>TO VERDICT.</h2>
+        <p>Source-aware execution from ingestion to final verdict.</p>
+        <ul class="manuscriptList">
+          <li><i>I</i> Source discovery</li>
+          <li><i>II</i> Execution planning</li>
+          <li><i>III</i> Analysis</li>
+          <li><i>IV</i> Gate verdict</li>
+        </ul>
+      </div>
+      <div class="diagram reveal" aria-label="Execution manuscript diagram">
+        <div class="ring"></div><div class="ring2"></div><div class="ring3"></div><div class="center"></div>
+        <div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="line l4"></div><div class="line l5"></div>
+        <div class="node n1"><span>Source</span></div>
+        <div class="node n2"><span>Plan</span></div>
+        <div class="node n3"><span>Profile</span></div>
+        <div class="node n4"><span>Gate</span></div>
+        <div class="node n5"><span>Compare</span></div>
+        <div class="diagramLabel">source → plan → compare → profile → gate</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="allegory" id="allegory">
+    <div class="redPlane"></div>
+    <div class="guideLine"></div>
+    <div class="cainImage"><img src="https://raw.githubusercontent.com/parthdongre/FrameVitals/website-final-deploy/website/ChatGPT%20Image%20Sep%206%2C%202026%2C%2012_57_10%20PM%20%281%29.png" width="1122" height="1402" alt="Cain and Abel cutout artwork" loading="lazy" decoding="async"/></div>
+    <div class="allegoryWord">TRUST</div>
+    <div class="wrap">
+      <div class="allegoryCopy reveal">
+        <p class="kicker">03 / Allegory</p>
+        <h2>BAD DATA<br><span>STRIKES QUIETLY.</span></h2>
+        <p>Corruption often looks ordinary until something downstream breaks.</p>
+        <div class="allegoryQuote reveal">the breach is visible before the wound</div>
+      </div>
+    </div>
+    <div class="allegoryLabel reveal">corrupted batch → trusted baseline</div>
+  </section>
+
+  <section class="bench" id="benchmarks">
+    <div class="wrap benchGrid">
+      <div class="benchCopy reveal">
+        <p class="kicker">04 / Benchmarks</p>
+        <h2>MEASURE THE CHANGE.<br><em>DO NOT GUESS.</em></h2>
+        <p>Measured release evidence.</p>
+      </div>
+      <div class="benchPanel reveal">
+        <div class="metric">
+          <div class="metricHead"><strong>2.38×</strong><span>Quick mode wall-time improvement</span></div>
+          <div class="barWrap"><div class="bar" style="width:82%"></div></div>
+        </div>
+        <div class="metric">
+          <div class="metricHead"><strong>90.3%</strong><span>Lower standard peak RSS</span></div>
+          <div class="barWrap"><div class="bar red" style="width:90.3%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gateRelease" id="gate">
+    <div class="releaseStamp reveal"><span>Latest<br>Release<br>v0.3.0</span></div>
+    <div class="wrap gateGrid">
+      <div class="gateIntro reveal">
+        <p class="kicker">05 / Gate and release</p>
+        <h2>LET THE DATA<br><em>ANSWER.</em></h2>
+        <span class="script">before the model has to</span>
+        <div class="console reveal">
+          <div class="consoleHead"><span>FrameVitals Gate</span><span>reference → current</span></div>
+          <div class="consoleBody">
+            <div>$ framevitals gate current.parquet</div>
+            <div>&nbsp;&nbsp;--reference baseline.parquet</div>
+            <div>&nbsp;&nbsp;--contract contract.json</div>
+            <div class="sep"></div>
+            <div class="crow"><span>schema contract</span><strong class="pass">PASS</strong></div>
+            <div class="crow"><span>missingness</span><strong class="pass">PASS</strong></div>
+            <div class="crow"><span>distribution drift</span><strong class="warn">WARN</strong></div>
+            <div class="crow"><span>custom checks</span><strong class="pass">PASS</strong></div>
+            <div class="sep"></div>
+            <div class="crow"><span>gate verdict</span><strong class="warn">WARN</strong></div>
+          </div>
+        </div>
+      </div>
+      <article class="releaseSheet reveal">
+        <span class="kicker">Latest release</span>
+        <h3>v0.3.0</h3>
+        <p>Execution planning, resource control, monitoring fixes, and web-path hardening.</p>
+        <ul class="releaseList">
+          <li>execution planning</li>
+          <li>resource control</li>
+          <li>monitoring fixes</li>
+        </ul>
+        <a class="releaseLink" href="https://github.com/parthdongre/FrameVitals/releases/tag/v0.3.0" target="_blank" rel="noreferrer">Read release notes ↗</a>
+        <div class="seal"></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="monitor" id="monitor">
+    <div class="wrap monitorGrid">
+      <div class="monitorCopy reveal">
+        <p class="kicker">06 / Monitoring and snapshots</p>
+        <h2>FOLLOW THE SIGNAL<br>THROUGH TIME.</h2>
+        <p>Track how the dataset changes across snapshots.</p>
+      </div>
+      <div class="constellation reveal">
+        <div class="nodeWrap"><div class="nodeDot"></div><strong>reference</strong><span>trusted baseline</span></div>
+        <div class="nodeWrap"><div class="nodeDot"></div><strong>snapshot</strong><span>current batch</span></div>
+        <div class="nodeWrap"><div class="nodeDot"></div><strong>change</strong><span>drift detected</span></div>
+        <div class="nodeWrap"><div class="nodeDot"></div><strong>report</strong><span>gate result</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="orbit"></div>
+    <div class="finalAngel"><img src="https://raw.githubusercontent.com/parthdongre/FrameVitals/website-final-deploy/website/ChatGPT%20Image%20Sep%206%2C%202026%2C%2012_57_10%20PM%20%282%29.png" width="1122" height="1402" alt="Saint Michael closing artwork" loading="lazy" decoding="async"/></div>
+    <div class="wrap"><h2 class="reveal">GUARD THE DATA.<span>TRUST THE MODEL.</span></h2></div>
+    <div class="finalScript reveal">better data, higher confidence</div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footerGrid">
+    <div><div class="footerBrand">FrameVitals</div><div class="footerSub">watch the signal</div></div>
+    <div class="footerLinks">
+      <a href="https://github.com/parthdongre/FrameVitals" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://pypi.org/project/framevitals/" target="_blank" rel="noreferrer">PyPI</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script defer src="script.js"></script>
+</body>
+</html>
